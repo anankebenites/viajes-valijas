@@ -1,0 +1,22 @@
+[
+  {"ID": 1, "Monto": 850, "Region": "Europa", "Estacion": "Verano", "Mes": 7, "Satisfaccion": 5, "Acompaniantes": 2},
+  {"ID": 2, "Monto": 430, "Region": "Asia", "Estacion": "Invierno", "Mes": 1, "Satisfaccion": 6, "Acompaniantes": 0},
+  {"ID": 3, "Monto": 600, "Region": "América", "Estacion": "Primavera", "Mes": 11, "Satisfaccion": 4, "Acompaniantes": 1},
+  {"ID": 4, "Monto": 1250, "Region": "Oceanía", "Estacion": "Otoño", "Mes": 5, "Satisfaccion": 5, "Acompaniantes": 4},
+  {"ID": 5, "Monto": 300, "Region": "África", "Estacion": "Verano", "Mes": 8, "Satisfaccion": 2, "Acompaniantes": 0},
+  {"ID": 6, "Monto": 980, "Region": "Europa", "Estacion": "Primavera", "Mes": 4, "Satisfaccion": 4, "Acompaniantes": 1},
+  {"ID": 7, "Monto": 560, "Region": "Asia", "Estacion": "Otoño", "Mes": 10, "Satisfaccion": 3, "Acompaniantes": 1},
+  {"ID": 8, "Monto": 750, "Region": "América", "Estacion": "Invierno", "Mes": 7, "Satisfaccion": 6, "Acompaniantes": 2},
+  {"ID": 9, "Monto": 640, "Region": "Oceanía", "Estacion": "Verano", "Mes": 12, "Satisfaccion": 4, "Acompaniantes": 1},
+  {"ID": 10, "Monto": 1050, "Region": "África", "Estacion": "Primavera", "Mes": 5, "Satisfaccion": 5, "Acompaniantes": 4},
+  {"ID": 11, "Monto": 200, "Region": "Europa", "Estacion": "Otoño", "Mes": 9, "Satisfaccion": 1, "Acompaniantes": 0},
+  {"ID": 12, "Monto": 370, "Region": "Asia", "Estacion": "Verano", "Mes": 8, "Satisfaccion": 2, "Acompaniantes": 1},
+  {"ID": 13, "Monto": 820, "Region": "América", "Estacion": "Primavera", "Mes": 3, "Satisfaccion": 5, "Acompaniantes": 3},
+  {"ID": 14, "Monto": 450, "Region": "Oceanía", "Estacion": "Invierno", "Mes": 7, "Satisfaccion": 3, "Acompaniantes": 1},
+  {"ID": 15, "Monto": 690, "Region": "África", "Estacion": "Otoño", "Mes": 10, "Satisfaccion": 4, "Acompaniantes": 2},
+  {"ID": 16, "Monto": 730, "Region": "Europa", "Estacion": "Invierno", "Mes": 2, "Satisfaccion": 2, "Acompaniantes": 0},
+  {"ID": 17, "Monto": 950, "Region": "Asia", "Estacion": "Primavera", "Mes": 6, "Satisfaccion": 5, "Acompaniantes": 4},
+  {"ID": 18, "Monto": 960, "Region": "América", "Estacion": "Verano", "Mes": 12, "Satisfaccion": 3, "Acompaniantes": 1},
+  {"ID": 19, "Monto": 1210, "Region": "Oceanía", "Estacion": "Primavera", "Mes": 10, "Satisfaccion": 4, "Acompaniantes": 2},
+  {"ID": 20, "Monto": 490, "Region": "África", "Estacion": "Invierno", "Mes": 1, "Satisfaccion": 6, "Acompaniantes": 1}
+]
