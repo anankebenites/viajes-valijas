@@ -112,9 +112,8 @@ function calcularYSatisfaccion(nivel) {
   let filtroAcompaniantes = "";
 
   // FUNCION FILTRO GENERAL
-  $: viajesCombinados = [...viajes, ...viajesFormulario];
 
-  $: viajesFiltrados = viajesCombinados.filter(v =>
+  $: viajesFiltrados = viajes.filter(v =>
     (filtroRegion === "" || v.Region === filtroRegion) &&
     (filtroEstacion === "" || v.Estacion === filtroEstacion) &&
     (filtroAcompaniantes === "" || v.Acompaniantes === +filtroAcompaniantes)
