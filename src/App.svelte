@@ -174,26 +174,22 @@ function calcularYSatisfaccion(nivel) {
 
   }
 
-    
-  
-  const slides = [
-    "Texto slide 1. Fusce quis augue et tortor interdum bibendum. Nam dolor elit",
-   
-  ];
+  let pasoActual = 0;
 
-   function loadFlourishScript() {
-    // Asegura no recargar el script si ya está
-    if (!document.querySelector('script[src="https://public.flourish.studio/resources/embed.js"]')) {
-      const script = document.createElement('script');
-      script.src = "https://public.flourish.studio/resources/embed.js";
-      script.async = true;
-      document.body.appendChild(script);
-    }
+  const totalPasos = 6; // cantidad de preguntas
+
+  function siguientePaso() {
+    if (pasoActual < totalPasos - 1) pasoActual += 1;
   }
 
-  onMount(() => {
-    loadFlourishScript();
-  });
+  function pasoAnterior() {
+    if (pasoActual > 0) pasoActual -= 1;
+  }
+
+  function enviarFormulario() {
+    agregarViaje(); // tu función existente
+  }
+
 
 </script>
 
@@ -208,9 +204,9 @@ function calcularYSatisfaccion(nivel) {
 </section>
    
   <section id="explicacion" class="explicacion">
-  <h2>📦 ¿Cómo funciona?</h2>
+  <h2>¿Cómo funciona?</h2>
   <p>Tu valija representa tu viaje. Cada parte refleja una decisión:</p>
-  <img src="/images/ReferenciasForms.svg" width="990" alt="explicacion"/> 
+  <img src="/images/ref.svg" width="990" alt="explicacion"/> 
   <div>
   <button on:click={() => document.getElementById('formulario').scrollIntoView({ behavior: 'smooth' })}>
     Completa el formulario y crea tu propia valija!
@@ -305,7 +301,6 @@ function calcularYSatisfaccion(nivel) {
     </form>
   </div>
 </section>
-
 
 
 <!-- Paso 4: Mostrar las nuevas valijas -->
@@ -919,22 +914,6 @@ function calcularYSatisfaccion(nivel) {
                 </div>
           {/if}
     
-    </div>
-  {/each}
-</div>
-
-<!-- Contenedor de la visualización y los epígrafes -->
-<div id="my-wrapper">
-  <!-- Aquí va tu story con ID 3178326 -->
-  <div class="flourish-embed" data-src="story/3178326" data-height="100vh"></div>
-
-  <!-- Epígrafes y links a slides -->
-  {#each slides as slide, index}
-    <div style="margin: 2rem 0;">
-      <p>{@html slide}</p>
-      <a href={"#story/3178326/slide-" + (index + 1)} style="display: inline-block; margin-top: 0.5rem; color: blue;">
-        Ir a slide {index + 1}
-      </a>
     </div>
   {/each}
 </div>

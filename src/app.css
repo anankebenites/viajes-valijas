@@ -1,10 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap'); 
 
-#my-wrapper {
-  margin: auto;
-  max-width: 1280px;
-}
+
 .hero {
   height: 100vh; /* que ocupe toda la altura de la ventana */
   display: flex;
@@ -15,19 +12,21 @@
   padding: 2rem;
   text-align: center;
   box-shadow: 0 0 20px rgba(0,0,0,0.05);
-    font-family: 'Poppins', sans-serif;
-
-  
+  font-family: 'Poppins', sans-serif;
 }
 
 .hero h1 {
   font-size: 3rem;
-  color: #d63384;
   margin-bottom: 1rem;
-   font-size: 48px;
+  font-size: 48px;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   letter-spacing: -1px;
+  text-align: center;
+  background: linear-gradient(135deg, #852EFF, #FF49D7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .hero p {
@@ -38,7 +37,7 @@
 }
 
 .hero button {
-  background: #d63384;
+  background: linear-gradient(135deg, #852EFF, #FF49D7);
   color: white;
   padding: 1rem 2rem;
   font-size: 1.1rem;
@@ -55,28 +54,9 @@
   transform: translateY(-2px);
 }
 
-.explicacion button {
-  background: #6f42c1;
-  color: white;
-  padding: 1rem 2rem;
-  font-size: 1.1rem;
-  border: none;
-  border-radius: 50px;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(214, 51, 132, 0.3);
-  font-family: 'Poppins', sans-serif;
-  margin-top: 20px;
-
-}
-
-.explicacion button:hover {
-  background-color: #6f42c1;
-  transform: translateY(-2px);
-}
-
-
 /* === EXPLICACIÓN VISUAL === */
 .explicacion {
+    height: 100vh; /* que ocupe toda la altura de la ventana */
   padding: 3rem 1rem;
   text-align: center;
   background-color: #fff;
@@ -93,51 +73,54 @@
   font-size: 1rem;
   max-width: 500px;
   margin: 0 auto 2rem;
+font-family: 'Poppins', sans-serif;
+
 }
 
 .explicacion img {
   width: 90%;
-  max-width: 700px;
+  max-width: 1000px;
   border-radius: 1rem;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
-.leyenda-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-  justify-items: center;
-  align-items: center;
-  padding: 1rem;
-  background: #fff;
-  border-radius: 1rem;
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.05);
+.explicacion button {
+  background: #6f42c1;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(170, 51, 214, 0.3);
+  font-family: 'Poppins', sans-serif;
+  margin-top: 60px;
+
 }
 
-.leyenda-item {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.explicacion button:hover {
+  background-color: #6f42c1;
+  transform: translateY(-2px);
 }
 
-.leyenda-item img {
-  width: 60px;
-  height: auto;
-  margin-bottom: 0.5rem;
-  transition: transform 0.3s ease;
+.botones-formulario button {
+  background: #6f42c1;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(214, 51, 132, 0.3);
+  font-family: 'Poppins', sans-serif;
+  margin-top: 10px;
+
 }
 
-.leyenda-item span {
-  font-size: 0.95rem;
-  color: #444;
+.botones-formulario button:hover {
+  background: linear-gradient(135deg, #852EFF, #FF49D7);
+  transform: translateY(-2px);
 }
-
-.leyenda-item:hover img {
-  transform: scale(1.1);
-}
-
 
  h2 {
   font-size: 48px;
@@ -180,6 +163,10 @@ h3 {
   .valija {
     flex: 1 1 200px;    /* Ocupar al menos 200px, expandirse si hay lugar */
     max-width: 220px;   /* Para que no crezcan demasiado */
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+    margin:20px;
   }
 
   .container {
@@ -376,9 +363,10 @@ h3 {
 
 /* nuevo!!! */
 .formulario-section {
-    margin: 80px 0;
+    margin: 60px 0;
     padding: 0 20px;
-  }
+
+}
 
   .formulario-container {
     max-width: 600px;
