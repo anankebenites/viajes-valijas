@@ -4,11 +4,11 @@
   import dos from "/images/dos_ruedas.svg?raw";
   import tres from "/images/tres_ruedas.svg?raw";
   import cuatro from "/images/cuatro_ruedas.svg?raw";
+  
   import verano from "/images/sol2.svg"
   import invierno from "/images/nieve.svg"
   import otonio from "/images/hoja.svg"
   import primavera from "/images/flor.svg"
-  import candado from "/images/candado.svg"
 
   import familia from "/images/familia.svg"
   import amigos from "/images/amigos.svg"
@@ -116,13 +116,11 @@ function calcularYSatisfaccion(nivel) {
   let filtroAcompaniantes = "";
 
   // FUNCION FILTRO GENERAL
-
   $: viajesFiltrados = viajes.filter(v =>
     (filtroRegion === "" || v.Region === filtroRegion) &&
     (filtroEstacion === "" || v.Estacion === filtroEstacion) &&
     (filtroAcompaniantes === "" || v.Acompaniantes === +filtroAcompaniantes)
   );
-
 
   // FORMULARIO
   let viajesFormulario = [];
@@ -173,26 +171,7 @@ function calcularYSatisfaccion(nivel) {
     };
 
   }
-
-  let pasoActual = 0;
-
-  const totalPasos = 6; // cantidad de preguntas
-
-  function siguientePaso() {
-    if (pasoActual < totalPasos - 1) pasoActual += 1;
-  }
-
-  function pasoAnterior() {
-    if (pasoActual > 0) pasoActual -= 1;
-  }
-
-  function enviarFormulario() {
-    agregarViaje(); // tu función existente
-  }
-
-
 </script>
-
 
 <main>
   <section class="hero">
@@ -214,7 +193,7 @@ function calcularYSatisfaccion(nivel) {
   </div>
     </section>
 
-<!-- Paso 3: Formulario -->
+<!-- Formulario -->
 <section id="formulario" class="formulario-section">
   <div class="formulario-container">
     <h4 class="formulario-title">Compartí tu próximo viaje!</h4>
