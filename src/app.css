@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap'); 
 
 body {
-  background: linear-gradient(135deg, #ffe6f0, #fff0ff);
+  background: #ffe6f0;
 
 }
 
@@ -596,7 +596,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .footer-links a {
-  color: #0077b6;
+  color: hsl(320, 75%, 63%);
   font-weight: 600;
   text-decoration: none;
   font-size: 1.1rem;
@@ -604,6 +604,6 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .footer-links a:hover {
-  color: #023e8a;
+  color: #db37d5;
   transform: scale(1.1);
 }
