@@ -517,6 +517,7 @@ input[type="range"]::-moz-range-thumb {
   max-width: 1200px; /* Ancho máximo de la grilla */
   margin: 0 auto;    /* Centra el contenedor dentro de la página */
   padding: 40px 20px;
+  margin-bottom: 100px;
 }
 
 .intro-valijas {
