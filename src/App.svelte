@@ -177,13 +177,13 @@ function calcularYSatisfaccion(nivel) {
 
   // Array para guardar la data de cada slide. Cambiar cada uno con el epígrafe específico para cada slide.
   const slides = [
-    "👥 Aquí vemos a todas las personas que realizaron viajes, cada punto representa a un viajero distinto. Una primera imagen para entender la totalidad de datos con los que vamos a trabajar.",
-    "🌍 Ahora nos acercamos a los destinos: cada punto representa un país visitado por los viajeros. Nos permite ver claramente hacia dónde viajan y qué regiones reciben más visitas.",
-    "👩👨 Aquí dividimos a los viajeros por género para entender la participación de hombres y mujeres en los viajes registrados. Una manera de visibilizar quiénes viajan más y en qué proporción.",
-    "🧳 Ahora clasificamos a todas las personas según el motivo de su viaje: Amigos, Aventura, Estudio, Familiar, Negocios, Ocio o Pareja. Nos permite entender qué motiva a viajar a la mayoría.",
-    "⚖️ Aquí comparamos género y motivo de viaje para responder: ¿Existen diferencias entre hombres y mujeres a la hora de viajar? Por ejemplo, vemos que hay más hombres que mujeres viajando por negocios u oficio.",
-    "🗺️ Ahora exploramos los destinos alrededor del mapa según el motivo de viaje. Nos muestra hacia qué lugares viajan las personas según si buscan ocio, aventura, negocios, visitas familiares, estudios, y otros.",
-    "💰🌞 Por último, relacionamos la estación del año con el gasto de cada viajero. El tamaño de cada punto representa el monto gastado y el color la estación en la que viajaron, destacando que en invierno y verano —la “temporada alta”— los viajes tienden a representar un gasto mayor.",
+    "👥 👥 Empezamos viendo a todas las personas que hicieron un viaje. Cada punto representa a un viajero distinto. Es una primera mirada general para entender con qué datos vamos a estar trabajando.",
+    "🌍 Después nos acercamos a los destinos: cada punto ahora representa un país al que alguien viajó. Esto nos ayuda a ver claramente hacia dónde se viaja más y qué regiones son las más populares.",
+    "👩👨 También nos interesaba saber quiénes viajan, así que dividimos a las personas por género. Así podemos ver si viajan más hombres, mujeres o si está más equilibrado.",
+    "🧳 Ahora agrupamos a todos según el motivo por el que viajaron: por trabajo, por estudios, para visitar a alguien, para relajarse... Esta parte nos permite entender qué impulsa a cada persona a armar su valija.",
+    "⚖ ¿Y si cruzamos motivo con género? Bueno,descubrimos que los hombres tienden a viajar más por negocios que las mujeres. Así es como podemos descubrir diferencias interesantes.",
+    "🗺 Después volvemos al mapa, pero esta vez lo miramos desde los motivos. ¿Adónde viaja la gente que quiere desconectar? ¿Y los que viajan por trabajo? Es una forma de ver cómo el propósito del viaje influye en el destino.",
+    "💰🌞 Y por último, miramos el gasto: ¿cuándo se gasta más? Relacionamos la estación del año con el monto que gastó cada viajero. En invierno y verano, que son las temporadas altas, el gasto tiende a ser mayor.",
   ]
 
   function loadFlourishScrolly() {
@@ -193,7 +193,6 @@ function calcularYSatisfaccion(nivel) {
     script.onload = () => initFlourishScrolly()
     document.body.appendChild(script)
   }
-
 
   let paso = 1;
   const totalPasos = 6;
@@ -238,30 +237,28 @@ let mostrarValija = false;
 
 <main>
   <section class="pantalla-uno">
-    <h1>✈ Armá la valija de viaje</h1>
-    <p>Convertí tus emociones y planes de viaje en una valija interactiva</p>
+    <h1>✈ Armá tu valija de tu próximo viaje</h1>
+    <p>Convertí tus emociones y planes del viaje en una valija interactiva</p>
     <button on:click={() => document.getElementById('pantalla-dos').scrollIntoView({ behavior: 'smooth' })}>
-    ¡Empezar ahora!
+    ¡Empezá ahora!
   </button>
 </section>
    
   <section id="pantalla-dos" class="pantalla-dos">
   <h2>¿Cómo funciona?</h2>
-  <p>Tu valija representa tu viaje. Cada parte refleja una decisión</p>
+  <p>Tu valija representa tu próximo viaje. Cada elemento de la valija representa una característica de tu aventura.</p>
   <img src="/images/ref.svg" width="990" alt="explicacion"/> 
   <div>
   <button on:click={() => document.getElementById('formulario').scrollIntoView({ behavior: 'smooth' })}>
-    Completa el formulario y crea tu propia valija!
+  ¡Completá el formulario y creá tu propia valija!
   </button>
   </div>
     </section>
 
 <section id="formulario" class="formulario-section">
   <div class="formulario-container">
-    <h4 class="formulario-title">Compartí tu próximo viaje!</h4>
+    <h4 class="formulario-title">¡Compartí tu próximo viaje!</h4>
     <p class="formulario-subtitle">Contanos sobre tu aventura</p>
-
-
     {#if paso === 1}
       <div class="form-group">
         <label for="nombre">Nombre</label>
@@ -356,8 +353,6 @@ let mostrarValija = false;
   {#if paso === 6}
     <p class="mensaje-final">¡Formulario completo!</p>
   {/if}
-
-
 </section>
 
 {#if mostrarValija}
@@ -981,7 +976,7 @@ let mostrarValija = false;
 <p class="intro-valijas">
   ¡Listo! Ya creaste tu valija.  Ahora te invitamos a ver los viajes que compartieron otras personas. 
   ¿A dónde fueron? ¿Con quiénes viajaron? ¿Qué los motivó?  
-  Cada valija tiene su propia historia... exploralas y descubrí qué tan parecidos (o distintos) fueron esos viajes al tuyo.
+  Cada valija tiene su propia historia... Exploralas y descubrí qué tan parecidos (o distintos) fueron esos viajes al tuyo.
 </p>
 
 <div class="valijas-anteriores">
@@ -1624,8 +1619,8 @@ let mostrarValija = false;
       <strong>Integrantes:</strong> Mia Mitelman · Ananke Benites Astoul · Sofía Majlis
     </p>
     <div class="footer-links">
-      <a href="https://github.com/anankebenites/viajes-valijas.git" target="_blank">GitHub</a>
-      <a href="https://viajes-valijas-9lzr.vercel.app/" target="_blank">Vercel</a>
+      <a href="https://github.com/sofimajlis/visualizacion-parte2.git" target="_blank">GitHub</a>
+      <a href="https://visualizacion-parte2.vercel.app" target="_blank">Vercel</a>
     </div>
     <p class="footer-sub">
       <strong>Materia:</strong> Visualización de Datos · <strong>Carrera:</strong> Tecnología Digital UTDT
