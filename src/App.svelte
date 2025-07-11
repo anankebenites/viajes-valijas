@@ -151,6 +151,8 @@ function calcularYSatisfaccion(nivel) {
     });
   });
 
+  let viajeActual= null;
+
   function agregarViaje() {
     const nuevo = { ...nuevoViaje };
 
@@ -161,7 +163,9 @@ function calcularYSatisfaccion(nivel) {
     push(viajesRef, nuevo);
 
     // Agregar también a localStorage
-    viajesFormulario = [...viajesFormulario, nuevo];
+    //viajesFormulario = [...viajesFormulario, nuevo];
+    viajesFormulario = [...viajesFormulario, nuevoViaje];
+    viajeActual = nuevoViaje;
 
     // Reiniciar el formulario
     nuevoViaje = {
@@ -230,8 +234,7 @@ function calcularYSatisfaccion(nivel) {
     agregarViaje(); // tu función existente
   }
 
-let mostrarValija = false;
-  
+let mostrarValija = false;  
 </script>
 
 
@@ -247,7 +250,7 @@ let mostrarValija = false;
   <section id="pantalla-dos" class="pantalla-dos">
   <h2>¿Cómo funciona?</h2>
   <p>Cada elemento de la valija representa una característica de tu aventura.</p>
-  <img src="/images/ref.svg" width="990" alt="explicacion"/> 
+  <img src="/images/Group 12.svg" width="990" alt="explicacion"/> 
   <div>
   <button on:click={() => document.getElementById('formulario').scrollIntoView({ behavior: 'smooth' })}>
   ¡Completá el formulario y creá tu propia valija!
@@ -359,7 +362,7 @@ let mostrarValija = false;
 <section id="valija-generada" class="pantalla-inicio">
     <div class="container">
       {#each viajesFormulario.slice(-1) as viaje}
-      <h2 class="formulario-title">Esta es tu valija de tu próximo viaje!</h2>
+      <h2 class="formulario-title" style= "margin-top: 80px">¡Esta es tu valija de tu próximo viaje!</h2>
         <div class="valija" style="position: relative; display: flex; flex-wrap: wrap; gap: 20px;">
       {#if  viaje.Acompaniantes === 0} 
               <svg width="189" height="294" viewBox="0 0 189 294" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -980,7 +983,7 @@ let mostrarValija = false;
 </p>
 
 <div class="valijas-anteriores">
-  {#each viajesFormulario as viaje}
+  {#each viajesFormulario.filter(v => v !== viajeActual) as viaje}
     <div class="valija" style="position: relative; display: flex; flex-wrap: wrap; gap: 20px;">
       {#if  viaje.Acompaniantes === 0} 
               <svg width="189" height="294" viewBox="0 0 189 294" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1595,7 +1598,6 @@ let mostrarValija = false;
 
 <!-- Contenedor de la story de flourish (scrolly)-->
 <div id="my-wrapper">
-  <!-- Reemplazar el ID de jeemplo por el de la story propia -->
   <div class="flourish-embed" data-src="story/3178326" data-url="https://flo.uri.sh/story/3178326/embed" data-height="100vh">
     
     <!-- <script src="https://public.flourish.studio/resources/embed.js"></script> -->
