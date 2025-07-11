@@ -237,7 +237,7 @@ let mostrarValija = false;
 
 <main>
   <section class="pantalla-uno">
-    <h1>✈ Armá tu valija de tu próximo viaje</h1>
+    <h1>✈ Armá la valija de tu próximo viaje</h1>
     <p>Convertí tus emociones y planes del viaje en una valija interactiva</p>
     <button on:click={() => document.getElementById('pantalla-dos').scrollIntoView({ behavior: 'smooth' })}>
     ¡Empezá ahora!
