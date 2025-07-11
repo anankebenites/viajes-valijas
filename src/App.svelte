@@ -250,7 +250,7 @@ let mostrarValija = false;
   <section id="pantalla-dos" class="pantalla-dos">
   <h2>¿Cómo funciona?</h2>
   <p>Cada elemento de la valija representa una característica de tu aventura.</p>
-  <img src="/images/Group 12.svg" width="990" alt="explicacion"/> 
+  <img src="/images/Group12.svg" width="990" alt="explicacion"/> 
   <div>
   <button on:click={() => document.getElementById('formulario').scrollIntoView({ behavior: 'smooth' })}>
   ¡Completá el formulario y creá tu propia valija!
