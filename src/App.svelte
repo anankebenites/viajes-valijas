@@ -1619,8 +1619,7 @@ let mostrarValija = false;
       <strong>Integrantes:</strong> Mia Mitelman · Ananke Benites Astoul · Sofía Majlis
     </p>
     <div class="footer-links">
-      <a href="https://github.com/sofimajlis/visualizacion-parte2.git" target="_blank">GitHub</a>
-      <a href="https://visualizacion-parte2.vercel.app" target="_blank">Vercel</a>
+      <a href="https://github.com/anankebenites/viajes-valijas.git" target="_blank">GitHub</a>
     </div>
     <p class="footer-sub">
       <strong>Materia:</strong> Visualización de Datos · <strong>Carrera:</strong> Tecnología Digital UTDT
