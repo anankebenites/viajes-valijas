@@ -182,7 +182,7 @@ function calcularYSatisfaccion(nivel) {
     "👩👨 También nos interesaba saber quiénes viajan, así que dividimos a las personas por género. Así podemos ver si viajan más hombres, mujeres o si está más equilibrado.",
     "🧳 Ahora agrupamos a todos según el motivo por el que viajaron: por trabajo, por estudios, para visitar a alguien, para relajarse... Esta parte nos permite entender qué impulsa a cada persona a armar su valija.",
     "⚖ ¿Y si cruzamos motivo con género? Bueno,descubrimos que los hombres tienden a viajar más por negocios que las mujeres. Así es como podemos descubrir diferencias interesantes.",
-    "🗺 Después volvemos al mapa, pero esta vez lo miramos desde los motivos. ¿Adónde viaja la gente que quiere desconectar? ¿Y los que viajan por trabajo? Es una forma de ver cómo el propósito del viaje influye en el destino.",
+    "🗺 Después volvemos al mapa, pero esta vez lo miramos desde los motivos. ¿A dónde viaja la gente que quiere desconectar? ¿Y los que viajan por trabajo? Es una forma de ver cómo el propósito del viaje influye en el destino.",
     "💰🌞 Y por último, miramos el gasto: ¿cuándo se gasta más? Relacionamos la estación del año con el monto que gastó cada viajero. En invierno y verano, que son las temporadas altas, el gasto tiende a ser mayor.",
   ]
 
