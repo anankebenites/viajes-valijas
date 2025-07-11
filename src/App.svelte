@@ -246,7 +246,7 @@ let mostrarValija = false;
    
   <section id="pantalla-dos" class="pantalla-dos">
   <h2>¿Cómo funciona?</h2>
-  <p>Tu valija representa tu próximo viaje. Cada elemento de la valija representa una característica de tu aventura.</p>
+  <p>Cada elemento de la valija representa una característica de tu aventura.</p>
   <img src="/images/ref.svg" width="990" alt="explicacion"/> 
   <div>
   <button on:click={() => document.getElementById('formulario').scrollIntoView({ behavior: 'smooth' })}>
